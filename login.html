@@ -49,6 +49,11 @@
         text-align: center;
       }
 
+      form{
+        font-size: 20px;
+        color: white;
+      }
+
     /* On small screens, set height to 'auto' for sidenav and grid */
     @media screen and (max-width: 767px) {
       .sidenav {
@@ -86,16 +91,15 @@
 <div class="container-fluid text-center">
   <div class="row content">
 
-    <div class="welcome-text">
-      Welcome
-    </div>
-        <div class="homepage-text">
-      <p>One single site for all of the student's needs. A way to manage your groups, academics, tasks, expenditure and more. </p>
+    <form action="/action_page.php" method="get">
+    
+    UserID:<br>
+    <input type="text" name="user" ><br>
+    Password:<br>
+    <input type="text" name="pass" ><br><br>
+    <input type="submit" value="Submit">
 
-
-
-
-  </div>
+    </form>
 </div>
 
 </body>

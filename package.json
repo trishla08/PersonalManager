@@ -1,0 +1,23 @@
+{
+  "name": "personalmanager",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trishla08/PersonalManager.git"
+  },
+  "author": "trishla",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trishla08/PersonalManager/issues"
+  },
+  "homepage": "https://github.com/trishla08/PersonalManager#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mysql": "^2.15.0"
+  }
+}
