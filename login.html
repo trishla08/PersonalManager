@@ -51,6 +51,10 @@
 
       form{
         font-size: 20px;
+        
+      }
+      .formtext{
+        font-size: 20px;
         color: white;
       }
 
@@ -79,10 +83,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/index.html">Home</a></li>
-        <li><a href="/signup">Sign Up</a></li>
+        <li><a href="/signup.html">Sign Up</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        <li><a href="/login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
       </ul>
     </div>
   </div>
@@ -91,11 +95,13 @@
 <div class="container-fluid text-center">
   <div class="row content">
 
-    <form action="/action_page.php" method="get">
-    
-    UserID:<br>
+    <form action="/loginsubmit" method="post">
+    <div class="formtext">
+    UserID:<br></div>
     <input type="text" name="user" ><br>
+    <div class="formtext">
     Password:<br>
+    </div>
     <input type="text" name="pass" ><br><br>
     <input type="submit" value="Submit">
 
