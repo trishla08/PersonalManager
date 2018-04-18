@@ -93,14 +93,38 @@ app.get('/loginsubmit', function(req,res){
 
 app.post('/loginsubmit', function(req, res){
 
+    var error = 0;
     var user=req.body.user;
 
     var pass=req.body.pass;
     //Prints Name
-    console.log("password is " + pass);
+   // console.log("password is " + pass);
     
     //Redirect to homepage
-    res.redirect('/personalmenu.html');
+    con.connect(function(err) {
+
+      if (err) throw err;
+
+      var sql = "SELECT username from users where (username ='"+user+"' AND password = '"+pass+"')";
+
+      con.query(sql, function (err, result) {
+
+        if (err) throw err;
+
+        console.log(result);
+      //  console.log("1 record inserted");
+      if (result != 0)
+      res.redirect('/personalmenu.html' + user);
+      else{
+      error = 1;
+      res.redirect('/login.html');
+    }
+         res.end();
+    });
+
+
+    });
+    
 
 })
 

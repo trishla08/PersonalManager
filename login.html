@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="index.js"></script>
   <style>
     /* Remove the navbar's default margin-bottom and rounded borders */
     body{
@@ -28,6 +29,10 @@
       height: 100%;
     }
 
+
+    .error{
+      display: none;
+    }
     /* Set black background color, white text and some padding */
     footer {
       background-color: #555;
@@ -104,6 +109,9 @@
     </div>
     <input type="text" name="pass" ><br><br>
     <input type="submit" value="Submit">
+    <div class="error alert alert-warning">
+    <strong>Warning!</strong> This alert box could indicate a warning that might need attention.
+    </div>
 
     </form>
 </div>
